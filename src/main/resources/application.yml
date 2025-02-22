@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
+
+spring:
+  profiles:
+    active: dev
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
